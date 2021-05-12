@@ -1,11 +1,11 @@
 ---
-title             : "The categorization of L3 sounds in Spanish/English bilinguals at the very initial stage of L3 acquisition"
-shorttitle        : "The categorization of L3 sounds in Spanish/English bilinguals"
+title             : "The categorization of L3 sounds in Spanish/English bilinguals during the initial stage of L3 acquisition"
+shorttitle        : "Categorization of L3 sounds in Spanish/English bilinguals"
 
 author: 
   - name          : "Kyle Parrish"
     affiliation   : "1"
-    corresponding : yes    # Define only one corresponding author
+    corresponding : yes 
     address       : "15 Seminary Place, New Brunswick, NJ 08904"
     email         : "kcp74@scarletmail.rutgers.edu"
 
@@ -35,13 +35,13 @@ classoption       : "man"
 output            : papaja::apa6_word
 ---
 
-
 ```{r setup, include = FALSE}
 library("papaja")
 library("knitr")
+library("Hmisc")
+library("htmlwidgets")
 
 source(here::here("scripts", "07_manuscript_data.R"))
-
 
 ```
 
@@ -52,18 +52,11 @@ set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
-```{r, 'include-results', child='./includes/sections/01_intro_lit_review.Rmd', eval=T}
-```
-
 ```{r, 'include-results', child='./includes/sections/02_method.Rmd', eval=T}
 ```
 <!-- RESULTS -->
 ```{r, 'include-results', child='./includes/sections/03_results.Rmd', eval=T}
 ```
-<!-- DISCUSSION -->
-```{r, 'include-discussion', child='./includes/sections/04_discussion_conclusion.Rmd', eval=T}
-```
-
 
 <!-- Pagebreak for refs -->
 ```{=openxml}
